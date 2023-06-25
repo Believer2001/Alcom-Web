@@ -1,2 +1,2 @@
 # Alcom-Web
-This poject was related to alumni website of our college.
+This project was related to alumni website of our college.
