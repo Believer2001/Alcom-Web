@@ -1,0 +1,52 @@
+.details_fund{
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin: -10px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.purpose_head{
+    font-size: 20px;
+}
+.details_fund li span{
+font-weight: 550;
+}
+.bg-reward{
+    margin-top: 100px;
+}
+@media screen and (max-width:1110px) {
+.details_fund{  
+    margin-top: -30px;
+    font-size: 15px;
+}
+.bg-reward{
+    margin-top: 120px;
+    padding: 10px 80px;
+}
+}
+@media screen and (max-width:880px) {
+.details_fund{
+   padding: 10px;
+    font-size: 14px;
+}
+.bg-reward{
+    margin-top: 120px;
+    padding: 10px 100px;
+}
+}
+@media screen and (max-width:790px) {
+    .details_fund{
+        padding: 10px;
+         font-size: 12px;
+     } 
+     .bg-reward{
+        margin-top: 120px;
+        padding: 10px 130px;
+    }
+    .alumni_rewards{
+        height: max-content;
+    }
+    
+}

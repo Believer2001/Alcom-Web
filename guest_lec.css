@@ -1,0 +1,55 @@
+@font-face {
+    font-family: Regular;
+    src: url(Fonts/ARLRDBD.ttf);
+}
+
+@font-face {
+    font-family:Rounded;
+    src: url(Fonts/unicode.arialr.ttf);
+}
+
+@font-face {
+	font-family: Regular ;
+	src: url(Fonts/ARLRDBD.ttf);
+}
+
+@font-face {
+	font-family: Rounded;
+	src: url(Fonts/unicode.arialr.ttf);
+}
+
+
+
+/* NEWS FRAME AREA TOP LEVEL PAGE - WIDTH ADDS BORDER */
+
+
+.guest_section{
+    z-index: 2000;
+    background: linear-gradient(-135deg, #14a3de, #0054A6);
+    position: fixed;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 98%;
+    border-radius: 10px;
+    font-family: Rounded;
+    opacity: 0;
+    clip-path: polygon(0 0,0 0,0 0,0 0);
+    transition: all 0.5s ease-out;
+}
+.guest_section h1{
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+}
+.guest_text{
+    /* align-self: center; */
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+    margin-top: 2rem;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 30px;
+}

@@ -1,0 +1,171 @@
+
+@font-face {
+    font-family: Regular;
+    src: url(Fonts/ARLRDBD.ttf);
+}
+
+@font-face {
+    font-family:Rounded;
+    src: url(Fonts/unicode.arialr.ttf);
+}
+.headings{
+    margin: 20px;
+}
+.headings .Alcom_logo_rewards img{
+    position:absolute;
+    width: 80px;
+    top:5px;
+}
+.headings .mnit_txt:after{
+    position: absolute;
+    top: 0;
+    border-radius: 2px;
+    left:-15px;
+    content: '';
+    background-color: #0054A6;
+    width: 5px;
+    height: 80px;
+}
+.headings .mnit_txt{
+    font-family: Regular;
+    top: 7px;
+    line-height: 35px;
+    position:absolute;
+    left: 125px;
+    font-size: 40px;
+    color: #0054A6;
+}
+.headings .mnit_txt p{
+    font-size: 15px;
+    color: #0054A6;
+}
+
+@media screen and (max-width:600px) {
+    .headings .Alcom_logo img{
+        width: 60px;
+		top: 20px;
+    }
+    .headings .mnit_txt{
+        top:25px;
+        line-height: 20px;
+        font-size: 30px;
+        left: 100px;
+    }
+    .headings .mnit_txt:after{
+        width:2px;
+        top:-5px;
+        left: -10px;
+        height: 60px;
+    }
+    .headings .mnit_txt p{
+        font-size: 8px;
+    }
+}
+
+.Souv_section{
+    margin: 80px 10px 0 10px;
+    background-color: #fff;
+}
+/* h1{
+    text-align: center;
+    color: #0054A6;
+    margin: 10px 0;
+    font-size: 3rem;
+
+} */
+
+.Souvenir_gallery{
+    background-color: #0054A6;
+    margin: 10px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Souvenir_gallery img{
+    width: 360px;
+    height: 300px;
+    margin: 10px;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+.Souvenir_gallery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+
+.Souvenir_gallery input[type="radio"]{
+    display:none;
+}
+
+.Souvenir_gallery label{
+    margin: 30px;
+    padding: 20px;
+    background-color: #0054A6;
+    border: 2px solid;
+    border-color: rgb(252, 120, 25);
+    color: #fff;
+    font-size: 1.2rem;
+}
+.Souvenir_gallery label:hover{
+    background-color:#fff;
+    color: #0054A6;
+}
+
+.Souvenir_gallery .souv-item-container{
+    width: 100%;
+    order: 1;
+    display: none;
+}
+.Souvenir_gallery input[type="radio"]:checked + label{
+ background-color:#fff;
+ color: #0054A6;   
+}
+.Souvenir_gallery input[type="radio"]:checked + label + .souv-item-container{
+    display: block;
+}
+
+
+/* Media Query */
+/* @media screen and (max-width:900px) and(min-width:600px) {
+    .Souvenir_gallery img{
+        width: 240px;
+        height: 170px;
+        padding: 5px;
+        margin: 0 10px;
+        filter: grayscale(100%);
+        transition: 0.5s;
+    }
+    .Souvenir_gallery img:hover{
+        filter: grayscale(0);
+        transform: scale(1.1);
+    } */
+/* @media screen and (max-width:600px) and(min-width:430px) {
+    .Souvenir_gallery img{
+        width: 290px;
+        height: 200px;
+        padding: 5px;
+        margin: 0 10px;
+        filter: grayscale(100%);
+        transition: 0.5s;
+    }
+    .Souvenir_gallery img:hover{
+        filter: grayscale(0);
+        transform: scale(1.1);
+    }
+} */
+/* @media screen and (max-width:430px) {
+    .Souvenir_gallery img{
+        width: 200px;
+        height: 150px;
+        padding: 5px;
+        margin: 0;
+        filter: grayscale(100%);
+        transition: 0.5s;
+    }
+    .Souvenir_gallery img:hover{
+        filter: grayscale(0);
+        transform: scale(1.1);
+    }
+} */

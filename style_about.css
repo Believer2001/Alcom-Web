@@ -1,0 +1,236 @@
+@font-face {
+    font-family: Regular;
+    src: url(Fonts/ARLRDBD.ttf);
+}
+
+@font-face {
+    font-family:Rounded;
+    src: url(Fonts/unicode.arialr.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+}
+.content{
+    /* background-color:blue; */
+    width:100%;
+    
+
+}
+.box{
+    /* margin: 10px; */
+   
+    padding: 50px 80px 50px 80px;
+    /* border: 2px solid black; */
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    
+}
+.box-1{
+    /* margin-bottom: 30px; */
+    display: flex;
+    
+    
+border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    text-align: left;
+    background-color: white;
+    /* box-shadow: 10px 10px 15px rgb(67, 67, 76); */
+}
+.box-2{
+
+    display: flex;
+  margin-top: 40px;
+border-radius: 7px;
+    justify-content: center;
+    text-align: center;
+    text-align: left;
+    background-color: white;
+    /* box-shadow: 10px 10px 15px rgb(67, 67, 76) ; */
+}
+.image{
+    padding-left: 10px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* box-shadow: 10px 0px 15px grey; */
+}
+
+
+.text{
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: regular;
+    line-height: 10px;
+}
+
+.img_div{
+    display: flex;
+    flex-direction: column;
+}
+/* ************************************ */
+
+.alumni{
+    /* margin-top: 1500px;  */
+
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+    width: 85%;
+    min-height: 80vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px ;
+    /* box-shadow: 20px 20px 24px rgb(77, 75, 75); */
+}
+.image-2{
+  
+    flex: 1;
+    padding-left: 10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* box-shadow: 10px 0px 15px grey; */
+}
+/* .image-2 :hover{
+    box-shadow: 10px 10px 15px grey;
+} */
+.image-2 img{
+    
+    height: 280px;
+    /* width: 350px; */
+    width: 80%;
+    /* border: 2px solid rgb(46, 46, 46); */
+    border-radius: 7px;
+    /* border: 5px solid #0054a6; */
+    box-shadow: 5px 5px 15px  hsla(210, 100%, 33%, 1)
+
+    
+    
+}
+.text-2{
+    color: #fff;
+    flex: 1;
+    font-size: 1rem;
+    padding: 40px;
+    display: flex;
+    line-height: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: regular;
+    text-align: justify;
+}
+.about_head{
+  /* margin-top: 10px;
+    margin-bottom: 10px; */
+    color: #0054a6;
+    padding-bottom: 20px;
+    font-family: rounded;
+    font-size: 2rem;
+} 
+.about_span{
+    color: #95D2f3;
+    font-size: 3rem;
+}
+@media screen and (max-width:950px) {
+    .image-2 img{
+        height: 230px;
+        width: 230px;
+    }
+    .text-2{
+        font-size: 15px;
+    }
+    
+    .text{
+        font-size: 15px;
+    }
+    .Alumni_heading{
+        font-size: 20px;
+    }
+    .mnit{
+        font-size: 20px;
+    }
+    .image{
+        padding-bottom: 10px; 
+     }
+     .image-2{
+         padding-bottom: 10px; 
+     }
+}
+@media screen and (max-width:720px) {
+    .box{
+        padding: 20px 20px;
+    }
+    .box-1{
+      
+        flex-direction: column;
+        padding: 10px 1px;
+        margin-bottom: 0px;
+
+    }
+    
+    .box-2{
+        flex-direction: column;
+        padding: 10px 1px;
+
+    }
+    .text{
+        font-size: 14px;
+    }
+    .about_alumni{
+        font-size:14px ;
+    }
+    .image{
+        padding-bottom: 10px;
+     }
+     .image-2{
+         padding-bottom: 10px;
+     }
+
+}
+@media screen and (max-width:400px){
+    .image-2 img{
+        height: 200px;
+        width: 200px;
+        box-shadow: 5px 5px 15px  hsla(210, 100%, 33%, 1)
+    }
+    .image{
+        
+       padding-bottom: 10px; 
+    }
+    .image-2{
+        padding-bottom: 10px; 
+        padding-top: 20px;
+        
+    }
+    .box-1{
+        margin-bottom: 0px;
+    }
+}
+
+.box-2{
+    background: hsla(210, 100%, 33%, 1);
+
+background: linear-gradient(225deg, hsla(210, 100%, 33%, 1) 19%, hsla(194, 86%, 67%, 1) 96%);
+
+background: -moz-linear-gradient(225deg, hsla(210, 100%, 33%, 1) 19%, hsla(194, 86%, 67%, 1) 96%);
+
+background: -webkit-linear-gradient(225deg, hsla(210, 100%, 33%, 1) 19%, hsla(194, 86%, 67%, 1) 96%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0054A6", endColorstr="#65D2F3", GradientType=1 );
+}
