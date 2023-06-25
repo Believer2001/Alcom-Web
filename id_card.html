@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID_card</title>
+    <link rel="stylesheet" href="css/alumni_reward.css">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="Id_form" class="reg_form">
+    <div class="title">Alumni Id Card Registration</div>
+    <div class="close_btn" onclick="Id_form_close()"></div>
+    <div class="content_3">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Institute I'd</span>
+            <input type="text" placeholder="Enter your i'd" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Personal Email</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Branch</span>
+            <select required>
+                <option>--Select--</option>
+                <option>Computer Science and Engineering</option>
+                <option>Electonics and Communication Engineering</option>
+                <option>Electrical Engineering</option>
+                <option>Mechanical Engineering</option>
+                <option>Chemical Engineering</option>
+                <option>Civil Engineering</option>
+                <option>Metallurgical and Materials Engineering</option>
+                <option>Architecture Engineering</option>
+              </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Entry year</span>
+            <select required>
+                <option>--Select--</option>
+                <script>
+                    var myDate = new Date();
+                    var year = myDate.getFullYear();
+                    for(var i = year-4; i > 1963; i--){
+                        document.write('<option value="'+i+'">'+i+'</option>');
+                    }
+                    </script>
+              </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Passing year</span>
+            <select required>
+                <option>--Select--</option>
+                <script>
+                    var myDate = new Date();
+                    var year = myDate.getFullYear();
+                    for(var i = year-4; i > 1963; i--){
+                        document.write('<option value="'+i+'">'+i+'</option>');
+                    }
+                    </script>
+              </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Current Designation</span>
+            <input type="text" style="width:215% ;" placeholder="Enter your designation" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Contact Number</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Date of birth</span>
+            <input type="text" placeholder="DD-MM-YYYY" required>
+          </div>
+        </div>
+        <div class="user-details" style="margin-top:-15px ; margin-bottom:-5px;">
+          <div class="input-box">
+            <span class="details">Addesss</span>
+            <textarea style="width:323% ;max-height: 46px;height: 45px;padding: 13px 15px 5px 15px ;" placeholder="House No,Street,State,Country,Pincode" required></textarea>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="input-box">
+          
+          <label for="mypass_photo">Upload passport size photo:</label>
+          <input type="file" id="mypass_photo" name="passport size photo">
+          
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="Id_sampImg" class="reg_form">
+    <div class="title" style="margin-bottom: 20px;">Sample Alumni Id Card </div>
+    <div class="close_btn" onclick="Id_sampImg_close()"></div>
+    <div class="content_3">
+      <img src="/images/SampleID1.jpg" alt="error in loading" height="100%" width="100%">
+      <img src="/images/SampleID2.jpg" alt="error in loading" height="100%" width="100%">
+    </div>
+  </div>
+
+    <section class="alumni_rewards">
+      <section>
+        <a href="index.html">
+            <div class="headings">
+              <span class="Alcom_logo_rewards"><img src="images/alcomlogo.png"></span>
+              <span class="mnit_txt">
+                <p>MALAVIYA NATIONAL INSTITUTE OF TECHNOLOGY JAIPUR</p>ID Card
+              </span>
+            </div>
+      </a>
+      </section>
+    
+        <div class="bg-reward">
+            <div class="heading_reward">
+                Alumni ID Card
+            </div>
+            <div class="details_reward">
+                <p>
+                  Alcom has initiated the provision of unique ID cards to all Alumni. ALCOM ID Card was launched on the Alumni day 25th Dec 2014. Since then, ID cards are provided to golden and silver batches and also for convocation batch and also those who request through Web Portal every year. It helps them entering in the college any time & accessing college facilities like computer centre, library, hostel, mess, canteen, guest house, departments. In 2021 total 1,336 ID-cards were provided to alumni. It provides an identification on alumni-day and all other college events. It serves as a memorable token for them.
+                    </p>
+            </div>
+            <div class="btn_readmore" style="margin-bottom: -20px;">
+              <a ><button onclick="Id_sampImg_open()" class="btn_read">Sample ID Card</button></a>
+
+            </div>
+            <div class="btn_readmore">
+              <a ><button onclick="Id_form_open()" class="btn_read">Register for ID card</button></a>
+
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

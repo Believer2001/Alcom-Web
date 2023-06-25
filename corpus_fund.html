@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corpus Fund</title>
+    <link rel="stylesheet" href="CSS/alumni_reward.css">
+    <link rel="stylesheet" href="CSS/style_corpus_fund.css">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style_donate.css">
+    <style>
+   
+    </style>
+</head>
+<body>
+  <div id="Id_form" class="reg_form">
+    <div class="title">Donor Detail's</div>
+    <div class="close_btn" onclick="Id_form_close()"></div>
+    <div class="content_3">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Institute I'd</span>
+            <input type="text" placeholder="Enter your i'd" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Branch</span>
+            <select required>
+                <option>--Select--</option>
+                <option>Computer Science and Engineering</option>
+                <option>Electonics and Communication Engineering</option>
+                <option>Electrical Engineering</option>
+                <option>Mechanical Engineering</option>
+                <option>Chemical Engineering</option>
+                <option>Civil Engineering</option>
+                <option>Metallurgical and Materials Engineering</option>
+                <option>Architecture Engineering</option>
+              </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Entry year</span>
+            <select required>
+                <option>--Select--</option>
+                <script>
+                    var myDate = new Date();
+                    var year = myDate.getFullYear();
+                    for(var i = year-4; i > 1963; i--){
+                        document.write('<option value="'+i+'">'+i+'</option>');
+                    }
+                    </script>
+              </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Passing year</span>
+            <select required>
+                <option>--Select--</option>
+                <script>
+                    var myDate = new Date();
+                    var year = myDate.getFullYear();
+                    for(var i = year-4; i > 1963; i--){
+                        document.write('<option value="'+i+'">'+i+'</option>');
+                    }
+                    </script>
+              </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Current Designation</span>
+            <input type="text" style="width:215% ;" placeholder="Enter your designation" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Contact Number</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Date of birth</span>
+            <input type="text" placeholder="DD-MM-YYYY" required>
+          </div>
+        </div>
+        <div class="user-details" style="margin-top:-15px ; margin-bottom:-5px;">
+          <div class="input-box">
+            <span class="details">Reason for Donation</span>
+            <textarea style="width:323% ;max-height: 46px;height: 45px;padding: 13px 15px 5px 15px ;" placeholder="" required></textarea>
+          </div>
+        </div>
+        <!-- <div class="user-details" style="margin-top:-15px ; margin-bottom:-5px;">
+          <div class="input-box">
+            <span class="details">Addesss</span>
+            <textarea style="width:323% ;max-height: 46px;height: 45px;padding: 13px 15px 5px 15px ;" placeholder="House No,Street,State,Country,Pincode" required></textarea>
+          </div>
+        </div> -->
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="button">
+          <input onclick="main_donate_box_open()" type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="main_donate_box" class="main_main_donate">
+    <div class="page">
+      <div class="close_btn" onclick="main_donate_box_close()"></div>
+      <div class="heading">giving back to mnit</div>
+      <p class="line">SCAN QR CODE</p>
+      <div class="Qr">
+        <img src="images/qrcode.jpeg" alt="qrcode" />
+      </div>
+      <hr />
+      <div class="footer">
+        <h2>or</h2>
+        <p class="text1">use sbi collect</p>
+        <a
+          class="sbi_collect"
+          href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm"
+        >
+          click here</a
+        >
+      </div>
+    </div>
+  </div>
+
+    <section class="alumni_rewards">
+      <section>
+        <a href="index.html">
+            <div class="headings">
+              <span class="Alcom_logo_rewards"><img src="images/alcomlogo.png"></span>
+              <span class="mnit_txt">
+                <p>MALAVIYA NATIONAL INSTITUTE OF TECHNOLOGY JAIPUR</p>Alumni-Corpus Fund
+              </span>
+            </div>
+      </a>
+      </section>
+    
+        <div class="bg-reward">
+
+            <div class="details_fund">
+                
+                  <ul>
+                      <li ><b class="purpose_head">Purpose of Corpus Fund</b> <br> 
+                        <ol type="i">
+                          <li>Awarding scholarship</li>
+                          <li>Development of infrastructure & lab and</li>
+                          <li>Sponsoring Professor Chairs </li>
+                        </ol>
+                        and activities, at Malaviya National Institute of Technology Jaipur by alumni, as decided
+                        by Alumni Advisory Committee (AAC).
+                      </li>
+                      <li>
+                        <b>Name of Corpus fund: </b>MNIT-Alumni Corpus Fund <br> 
+                      </li>
+                      
+                      
+                        
+                          <li>
+                            <span>
+                              <b>The donations to the corpus fund are exempted from income tax under the section 80(C) of Income Tax Act, 1961.</b> </span>
+                          </li>
+                          <li> 
+                            The money can be transferred directly to the account with following details: <br>
+                            <b>
+                            MNIT-Alumni Corpus Fund <br>
+                            SBI Bank, MNIT branch <br>
+                            Head: Alumni corpus fund <br>
+                            Acc No.: 37488665138 <br>
+                            IFSC code: SBIN 0015921 <br>
+                          </b>
+                          </li>
+                        </ul>
+                      
+                  </ul>
+                    
+            </div>
+            <div class="btn_readmore">
+              <a ><button onclick="Id_form_open()" class="btn_read">DONATE NOW</button></a>
+
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

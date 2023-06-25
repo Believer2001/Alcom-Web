@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Rewards</title>
+    <link rel="stylesheet" href="css/alumni_reward.css">
+    <script src="js/script.js"></script>
+    <script src="js/Awards.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="alumni_rewards">
+      <div id="Reg_form" class="reg_form">
+        <div class="title">Alumni Awards Registration</div>
+        <div class="close_btn" onclick="Reg_form_close()"></div>
+        <div class="content_2">
+          <form action="#">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" placeholder="Enter your name" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Institute I'd</span>
+                <input type="text" placeholder="Enter your i'd" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Contact Number</span>
+                <input type="text" placeholder="Enter your number" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Age</span>
+                <input type="number" name="age" min="18" max="100" placeholder="Enter your Age" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Branch</span>
+                <select required>
+                    <option>--Select--</option>
+                    <option>Computer Science and Engineering</option>
+                    <option>Electonics and Communication Engineering</option>
+                    <option>Electrical Engineering</option>
+                    <option>Mechanical Engineering</option>
+                    <option>Chemical Engineering</option>
+                    <option>Civil Engineering</option>
+                    <option>Metallurgical and Materials Engineering</option>
+                    <option>Architecture Engineering</option>
+                  </select>
+              </div>
+              <div class="input-box">
+                <span class="details">Entry year</span>
+                <select required>
+                    <option>--Select--</option>
+                    <script>
+                        var myDate = new Date();
+                        var year = myDate.getFullYear();
+                        for(var i = year-4; i > 1963; i--){
+                            document.write('<option value="'+i+'">'+i+'</option>');
+                        }
+                        </script>
+                  </select>
+              </div>
+              <div class="input-box">
+                <span class="details">Passing year</span>
+                <select required>
+                    <option>--Select--</option>
+                    <script>
+                        var myDate = new Date();
+                        var year = myDate.getFullYear();
+                        for(var i = year-4; i > 1963; i--){
+                            document.write('<option value="'+i+'">'+i+'</option>');
+                        }
+                        </script>
+                  </select>
+              </div>
+            </div>
+            <div class="gender-details">
+              <input type="radio" name="gender" id="dot-1">
+              <input type="radio" name="gender" id="dot-2">
+              <input type="radio" name="gender" id="dot-3">
+              <span class="gender-title">Gender</span>
+              <div class="category">
+                <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Prefer not to say</span>
+                </label>
+              </div>
+            </div>
+            <div class="input-box">
+                <span class="details">Achivements</span>
+                <textarea required></textarea>
+            </div>
+            <div class="button">
+              <input onclick="Nom_form_open()" type="submit" value="Nominate">
+            </div>
+          </form>
+        </div>
+      </div>
+    
+      <div id="Nom_form" class="reg_form">
+        <div class="title">Alumni Awards Registration</div>
+        <div class="close_btn" onclick="Nom_form_close()"></div>
+        <p style="font-size: 20px;color: #14a3de; font-family: arial; margin-top: 5px;">Nominator Sections</p>
+        <div class="content_2">
+          <form action="#">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" placeholder="Enter your name" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Aadhar Number</span>
+                <input type="text" placeholder="Enter your Aadhar Number" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Contact Number</span>
+                <input type="text" placeholder="Enter your number" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Current Designation</span>
+                <input type="text" placeholder="Enter your designation" required>
+              </div>
+              <div class="input-file">
+                <span class="details">I'd Proof</span>
+                <input type="file" required>
+              </div>
+            </div>
+            <div class="gender-details">
+              <input type="radio" name="gender" id="dot-1">
+              <input type="radio" name="gender" id="dot-2">
+              <input type="radio" name="gender" id="dot-3">
+              <span class="gender-title">Gender</span>
+              <div class="category">
+                <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Prefer not to say</span>
+                </label>
+              </div>
+            </div>
+            <br>
+            <div style="display:flex ;margin: -15px 0 -5px 0;">
+                <span style="width:100% ;height: 2px;background-color:#95d2f3;margin-top: 10px;"></span>
+                <span style="width:25%;color:#95d2f3;text-align:center;font-size: 16px;margin: 0;padding: 0;">If Alumni</span>
+                <span style="width:100% ;height: 2px;background-color:#95d2f3;margin-top: 10px;"></span>
+            </div>
+            <div class="content">
+                <form action="#">
+                  <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Passing year</span>
+                        <select>
+                            <option>--Select--</option>
+                            <script>
+                                var myDate = new Date();
+                                var year = myDate.getFullYear();
+                                for(var i = year-4; i > 1963; i--){
+                                    document.write('<option value="'+i+'">'+i+'</option>');
+                                }
+                                </script>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Branch</span>
+                        <select>
+                            <option>--Select--</option>
+                            <option>Computer Science and Engineering</option>
+                            <option>Electonics and Communication Engineering</option>
+                            <option>Electrical Engineering</option>
+                            <option>Mechanical Engineering</option>
+                            <option>Chemical Engineering</option>
+                            <option>Civil Engineering</option>
+                            <option>Metallurgical and Materials Engineering</option>
+                            <option>Architecture Engineering</option>
+                        </select>
+                    </div>
+                </div>
+            <div class="button">
+              <input type="submit" value="Register">
+            </div>
+          </form>
+        </div>
+      </div>
+      </div>
+      <section>
+        <a href="index.html">
+            <div class="headings">
+              <span class="Alcom_logo_rewards"><img src="images/alcomlogo.png"></span>
+              <span class="mnit_txt">
+                <p>MALAVIYA NATIONAL INSTITUTE OF TECHNOLOGY JAIPUR</p>Alumni Awards
+              </span>
+            </div>
+      </a>
+      </section>
+        <div class="bg-reward">
+            <!-- <div class="heading_reward">
+                Alumni Awards
+            </div> -->
+
+            
+            <!-- <div class="mySlides fade">
+
+              <img src="images/rewards_1.JPG" style="width:40%" height="40%">
+              
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="images/rewards_1.JPG" style="width:40%" height="40%">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="images/rewards_1.JPG" style="width:40%" height="40%">
+            </div>
+            <div class="mySlides fade">
+              <img src="images/rewards_1.JPG" style="width:40%" height="40%">
+            </div>
+            <div class="mySlides fade">
+              <img src="images/rewards_1.JPG" style="width:40%" height="40%">
+            </div>
+            <div class="mySlides fade">
+              <img src="images/rewards_1.JPG" style="width:40%" height="40%">
+            </div>
+            <div class="mySlides fade">
+              <img src="images/rewards_1.JPG" style="width:40%" height="40%">
+            </div>
+            <div class="mySlides fade">
+              <img src="images/rewards_1.JPG" style="width:40%" height="40%">
+            </div>
+            <div class="mySlides fade">
+              <img src="images/rewards_1.JPG" style="width:40%" height="40%">
+            </div>
+            <div class="mySlides fade">
+              <img src="images/rewards_1.JPG" style="width:40%" height="40%">
+            </div>
+            <div class="mySlides fade">
+              <img src="images/rewards_1.JPG" style="width:40%" height="40%">
+            </div>
+            <div class="mySlides fade">
+              <img src="images/rewards_1.JPG" style="width:40%" height="40%">
+            </div> 
+           -->
+          <!-- The dots/circles -->
+            <div class="details_reward">
+                <p>
+                  Alumni’s are awarded with various types of awards based on their work in different fields or by their contribution to different areas of work or to MNIT directly or indirectly.<br>We award them to celebrate their long-term achievements of truly outstanding alumni. This award recognizes and celebrates outstanding alumni who have demonstrated sustained excellence in their personal and professional achievements, are leaders in their field or have made a substantial impact on society.This brings distinction to themselves and honor to our institute.
+                  <h4 class="award_text">Eligibility:</h4>
+                  <p>All alumni who have been awarded a degree from MREC/MNIT japur will be eligible for the award.Those alumni who are member of staff and faculty of MNIT Jaipur would be not eligible. </p>
+                  <h4 class="award_text">Nominations:</h4>
+                  <p>Nominations for the award from all over the world may be made by the alumni or the head of the Institute/Department where an alumnus is working. </p>
+                  <h4 class="award_text">Note   : <span class="award_note"> Self nomination is not allowed in any category.</span></h4>
+                
+            </div>
+             <div class="background_awards"><img src="images/awards_bg.png"/></div>
+            <div class="background_awrds">
+              
+            </div>
+            <div class="awards_list">
+              <div class="display">
+                <div class="sr_no">1</div>
+                <div class="name" style="text-align:left ;">MNIT Lifetime Achievement Award</div>
+                <div class="open" onclick="chg(this)"></div>
+              </div>
+              <div class="details">
+                <h1>Number of Awards : 5</h1>
+                <h1>Eligibility and Award details :</h1>
+                <p>The alumnus should be 60 years of age or above at
+                  the time of nomination <br>
+                  The criterion would be Excellence in the Service to
+                  Society</p>
+              </div>
+            </div>
+            <div class="awards_list">
+              <div class="display">
+                <div class="sr_no">2</div>
+                <div class="name" style="text-align:left ;">Distinguished Alumnus Award (DAA)</div>
+                <div class="open" onclick="chg(this)"></div>
+              </div>
+              <div class="details">
+                <h1>Number of Awards : 6</h1>
+                <p>Two awards each in the area of: <br>
+                  1. Service to Society <br>
+                  2. Industry, Public sector, Private Sector and Entrepreneurship <br>
+                  3. Academic and Research Excellence</p>
+              </div>
+            </div>
+            <div class="awards_list">
+              <div class="display">
+                <div class="sr_no">3</div>
+                <div class="name" style="text-align:left ;">Prof. V Srinivasan Memorial Award (VSMA)</div>
+                <div class="open" onclick="chg(this)"></div>
+              </div>
+              <div class="details">
+                <h1>Number of Awards : 1</h1>
+                <h1>Eligibility and Award details :</h1>
+                <p>The criterion would be Academic, Research and <br>
+                  Administrative Excellence in the Government or <br>
+                  Public Sector</p>
+              </div>
+            </div>
+            <div class="awards_list">
+              <div class="display">
+                <div class="sr_no">4</div>
+                <div class="name" style="text-align:left ;">Young Achiever’s Award (YAA)</div>
+                <div class="open" onclick="chg(this)"></div>
+              </div>
+              <div class="details">
+                <h1>Number of Awards : 6</h1>
+                <h1>Eligibility and Award details :</h1>
+                <p>The YAA would be conferred on alumni below 40 years of age or above as on date of nomination Two awards each in the area of: <br>
+                  1.Academic and Research Excellence <br>
+                  2.Young Innovator/Incubator <br>
+                  3. Industry/Entrepreneurial Excellence</p>
+              </div>
+            </div>
+            <div class="awards_list">
+              <div class="display">
+                <div class="sr_no">5</div>
+                <div class="name" style="text-align:left ;">Outstanding Service Award (OSA)</div>
+                <div class="open" onclick="chg(this)"></div>
+              </div>
+              <div class="details">
+                <h1>Number of Awards : 3</h1>
+                <h1>Eligibility and Award details :</h1>
+                <p>1. Highest fund contributor of the year to the MNIT Alumni Corpus Fund <br>
+                  2. Establishing State of Art lab at MNIT Jaipur <br>
+                  3. Alumnus providing maximum number of Training and Placements to MNIT Jaipur students</p>
+              </div>
+            </div>
+            
+            <!--<table class="award_table">
+              <tr>
+                <th class="award_tab_head">Sr. No.</th>
+                <th class="award_tab_head">Name of Award</th>
+                <th class="award_tab_head">Number of Awards</th>
+                <th class="award_tab_head">Eligibility and Award details</th>
+              </tr>
+              <tr>
+                <td>1.</td>
+                <td>MNIT Lifetime <br>
+                  Achievement <br>
+                  Award (MLAA)
+                </td>
+                <td>05</td>
+                <td>The alumnus should be 60 years of age or above at
+                  the time of nomination <br>
+                  The criterion would be Excellence in the Service to
+                  Society
+                </td>
+              </tr>
+                <td>2.</td>
+                <td>Distinguished <br>
+                  Alumnus Award <br>
+                  (DAA)</td>
+                <td>06</td>
+                <td>Two awards each in the area of: <br>
+                  1. Service to Society <br>
+                  2. Industry, Public sector, Private Sector and <br>
+                  Entrepreneurship <br>
+                  3. Academic and Research Excellence</td>
+              </tr>
+                <td>3.</td>
+                <td>Prof. V Srinivasan <br>
+                  Memorial Award <br>
+                  (VSMA)
+                  </td>
+                <td>01</td>
+                <td>The criterion would be Academic, Research and <br>
+                  Administrative Excellence in the Government or <br>
+                  Public Sector</td>
+              </tr>
+                <td>4.</td>
+                <td>Young Achiever’s <br>
+                  Award (YAA)
+                  </td>
+                <td>06</td>
+                <td>The YAA would be conferred on alumni below 40 <br>
+                  years of age or above as on date of nomination <br>
+                  Two awards each in the area of: <br>
+                  1.Academic and Research Excellence <br>
+                  2.Young Innovator/Incubator <br>
+                  3. Industry/Entrepreneurial Excellence <br>
+                  </td>
+              </tr>
+                <td>5.</td>
+                <td>Outstanding Service <br>
+                  Award (OSA)</td>
+                <td>03</td>
+                <td>1. Highest fund contributor of the year to the MNIT <br>
+                  Alumni Corpus Fund <br>
+                  2. Establishing State of Art lab at MNIT Jaipur <br>
+                  3. Alumnus providing maximum number of Training <br>
+                  and Placements to MNIT Jaipur students</td>
+              </tr>
+            </table>-->
+            <div class="btn_readmore">
+              <a > <button onclick="Reg_form_open()" class="btn_read">File Nominations</button></a>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
